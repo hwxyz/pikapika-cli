@@ -1,6 +1,5 @@
 import { red, green } from "chalk";
 import { error, success } from "log-symbols"; // 显示出 √ 或 × 等的图标
-import { name } from "@/../package.json";
 const log: any = {};
 
 const logTypes: Array<any> = [
@@ -11,7 +10,6 @@ const logTypes: Array<any> = [
   {
     name: "error",
     color: red,
-    prefix: name,
   },
   {
     name: "warning",
