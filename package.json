@@ -1,5 +1,5 @@
 {
-  "name": "@hwxyz/pikapika-cli",
+  "name": "@hwxyz/pikapika",
   "version": "0.0.1",
   "description": "A cli tool to create a project which base on nextjs+koa+typescript",
   "main": "src/index.ts",
@@ -7,11 +7,11 @@
     "test": "jest",
     "dev": "tsc -p tsconfig.json -w",
     "lint": "eslint src/**/* --ext .tsx",
-    "lint:fix": "eslint src/**/* --ext .tsx --fix",
+    "lint:fix": "eslint src/**/* --ext .tsx --ext .js --fix",
     "pb": "npm publish --access public"
   },
   "bin": {
-    "pikapika": "./bin/pikapika.js"
+    "pikapika": "bin/pikapika.js"
   },
   "husky": {
     "hooks": {
@@ -80,5 +80,8 @@
     "log-symbols": "^4.0.0",
     "ora": "^5.1.0",
     "ts-jest": "^26.4.4"
+  },
+  "directories": {
+    "test": "test"
   }
 }
